@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="mb-5">
+
+    {% if currency %}
+        <ul class="list-inline">
+            <li class="list-inline-item "><span class="h2"> {{ currency.country}} {{ currency.flag}}</span></li>
+            <li class="list-inline-item float-right"><span class="h2">{{ currency.designation}} {{ currency.symbol}}</span></li>
+        </ul>
+    {% else %}
+        <h2>Währung nicht gefunden: {{ slug }}</h2><hr>
+    {% endif %}
+
+    {% if exchangerate_list %}
+    <table class="table table-hover table-striped table-bordered w-100">
+
+        <thead>
+            <tr>
+                <th>Buy</th>
+                <th>Sell</th>
+                <th class="d-none d-sm-table-cell">Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for exchangerate in exchangerate_list  %}
+            <tr>
+                <td>{{ exchangerate.buy }}</td>
+                <td>{{ exchangerate.sell }}</td>
+                <td class="d-none d-sm-table-cell">
+                    {% if exchangerate.is_today %}
+                        Today, {{ exchangerate.change_date_time|date:"P"}}
+                    {% else %}
+                        {{ exchangerate.change_date_time }}
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    {% else %}
+        <div class="jumbotron">
+            <h4>Keine Daten gefunden</h4><hr>
+            <a href="{% url 'exchange:overview' %}">Zurück zur Übersicht</a>
+        </div>
+    {% endif %}
+
+</div>
+
+{% endblock content %}

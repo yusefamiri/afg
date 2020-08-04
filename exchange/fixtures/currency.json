@@ -1,0 +1,46 @@
+[
+{
+     "model": "exchange.currency",
+     "pk": 1,
+     "fields": {
+          "country": "Europa",
+          "iso": "EUR",
+          "designation": "Euro",
+          "symbol": "\u20ac",
+          "flag": "\uD83C\uDDEA\uD83C\uDDFA"
+     }
+},
+{
+     "model": "exchange.currency",
+     "pk": 2,
+     "fields": {
+          "country": "United States of America",
+          "iso": "USD",
+          "designation": "US-Dollar",
+          "symbol": "$",
+          "flag": "\uD83C\uDDFA\uD83C\uDDF8"
+     }
+},
+{
+     "model": "exchange.currency",
+     "pk": 3,
+     "fields": {
+          "country": "Japan",
+          "iso": "JPY",
+          "designation": "Yen",
+          "symbol": "\u00a5",
+          "flag": "\uD83C\uDDEF\uD83C\uDDF5"
+     }
+},
+{
+     "model": "exchange.currency",
+     "pk": 4,
+     "fields": {
+          "country": "United Kingdom",
+          "iso": "UK",
+          "designation": "Pfund Sterling",
+          "symbol": "\u00a3",
+          "flag": "\uD83C\uDDEC\uD83C\uDDE7"
+     }
+}
+]

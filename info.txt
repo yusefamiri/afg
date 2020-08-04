@@ -1,0 +1,25 @@
+HTML Tables Tutorial: DataTables (Part 3/3)
+https://www.youtube.com/watch?v=yGTGU3IPoWE
+
+
+Linking models with Foreign Keys - Django Web Development with Python p.9
+https://www.youtube.com/watch?v=Rju5qdU0e58
+
+Vehicle sensor data App Example - Data Visualization GUIs with Dash and Python p.5
+https://www.youtube.com/watch?v=luixWRpp6Jo
+
+nemona
+E:\DJANGO Projet\django-schools
+https://github.com/suhailvs/django-schools
+
+
+<p dir="rtl">چپچین و مناسب زبان فارسی</p>
+
+https://mdbootstrap.com/plugins/jquery/extended-cards/
+
+
+
+python3 manage.py runserver
+python3 manage.py createsuperuser
+python3 manage.py migrate
+

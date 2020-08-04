@@ -1,0 +1,79 @@
+[
+{
+    "model": "blog.Post",
+    "pk": 1,
+    "fields": {
+      "title": "Trump dreht durch!",
+      "slug": "Warum-Trump-jetzt-komplett-den-Verstand-verliert",
+      "author": 1,
+      "short_description": "Wir verraten warum Trump jetzt komplett den Verstand verloren hat",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "img": "fixture1.jpg",
+      "category": "News",
+      "creation_date": "2019-11-24 17:31:23.419+01:00",
+      "edit_date": "2019-11-26 12:31:23.419+01:00",
+      "status": "1"
+    }
+},
+{
+    "model": "blog.Post",
+    "pk": 2,
+    "fields": {
+      "title": "Katzen sind Hunde!",
+      "slug": "Sind-Katzen-die-neuen-Hunde",
+      "author": 2,
+      "short_description": "Wir verraten warum Katzen die neuen Hunde sind",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "img": "fixture4.jpg",
+      "category": "Info",
+      "creation_date": "2019-11-26 16:31:23.419+01:00",
+      "edit_date": "2019-11-27 16:31:23.419+01:00",
+      "status": "1"
+    }
+},{
+    "model": "blog.Post",
+    "pk": 3,
+    "fields": {
+      "title": "Weihnachtsbäume werden teurer!",
+      "slug": "Warum-Weihnachtsbaeume-teurer-werden",
+      "author": 3,
+      "short_description": "Wir verraten warum Weihnachtsbäume teurer werden",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "img": "fixture2.jpg",
+      "category": "Info",
+      "creation_date": "2019-11-24 16:31:23.419+01:00",
+      "edit_date": "2019-11-26 16:31:23.419+01:00",
+      "status": "1"
+    }
+},{
+    "model": "blog.Post",
+    "pk": 4,
+    "fields": {
+      "title": "Geld ist besser als Sex",
+      "slug": "Promi-packt-aus-Geld-ist-besser-als-Sex",
+      "author": 1,
+      "short_description": "Promi packt aus Geld ist besser als Sex",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "img": "fixture3.jpg",
+      "category": "News",
+      "creation_date": "2019-11-24 16:31:23.419+01:00",
+      "edit_date": "2019-11-26 16:31:23.419+01:00",
+      "status": "1"
+    }
+},{
+    "model": "blog.Post",
+    "pk": 5,
+    "fields": {
+      "title": "Geld ist doch nicht besser als Sex",
+      "slug": "Promi-revidiert-Aussage",
+      "author": 2,
+      "short_description": "Promi revidiert Ausage: Geld ist besser als Sex",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "img": "fixture3.jpg",
+      "category": "News",
+      "creation_date": "2019-11-24 16:31:23.419+01:00",
+      "edit_date": "2019-11-26 16:31:23.419+01:00",
+      "status": "1"
+    }
+}
+]

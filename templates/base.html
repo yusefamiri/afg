@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- style -->
+        <link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/base.css" %}" rel="stylesheet">
+        <link href="{% static "css/header.css" %}" rel="stylesheet">
+        <link href="{% static "css/footer.css" %}" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+
+        <!-- javascript -->
+        <script src="{% static "bootstrap/jQuery/jquery-3.4.1.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+        {% block javascript %}{% endblock %}
+
+        <!-- title and tap icon -->
+        <title>{% block title %}Financial Market{% endblock %}</title>
+        {#<link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.ico" %}" sizes="16x16 32x32 48x48 64x64">#}
+
+    </head>
+
+
+    {% block body %}<body>
+
+    <!-- header part-->
+    {% block header %}
+          <header>
+          </header>
+    {% endblock %}
+
+
+    <!-- nav part-->
+    {% block nav %}
+
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-orange border-bottom box-shadow">
+    
+            <a class="text-dark" href="{% url 'homepage' %}"><img src="{% static 'img/logo.svg' %}" height="40px" class="mr-3"></a>
+            <a class="text-dark mr-md-auto font-times nounderline" href="{% url 'homepage' %}"><h1 class="my-0 ">Financial Market</h1></a>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="{% url 'homepage' %}">Home</a>
+                <a class="p-2 text-dark" href="{% url 'blog:post-list' %}">News</a>
+                <a class="p-2 text-dark" href="{% url 'exchange:overview' %}">Exchange Table</a>
+            </nav>
+            <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+            </a>
+         </div>
+
+    {% endblock %}
+
+    <div class="container pt-5">
+
+{#    <ul class="nav justify-content-center mb-3">#}
+{#        <li class="nav-item badge-pill badge-success m-2">#}
+{#            <a class="nav-link text-white" href="#">Cool</a>#}
+{#        </li>#}
+{#        <li class="nav-item badge-pill badge-primary m-2">#}
+{#            <a class="nav-link text-white" href="#">News</a>#}
+{#        </li>#}
+{#        <li class="nav-item badge-pill badge-info m-2">#}
+{#            <a class="nav-link text-white" href="#">Trend</a>#}
+{#        </li>#}
+{#        <li class="nav-item badge-pill badge-danger m-2">#}
+{#            <a class="nav-link text-white" href="#">Financial</a>#}
+{#        </li>#}
+{#    </ul>#}
+
+    <!-- main part-->
+    {% block content %}{% endblock %}
+
+    </div>
+
+        <!-- footer part-->
+    {% block footer %}
+        <footer class="blog-footer">
+
+
+            <div class="small">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+            <ul class="nav justify-content-center m-2">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Cookies</a>
+                </li>
+            </ul>
+            <p><a href="#">Back to top</a></p>
+        </footer>
+    {% endblock %}
+
+    </body>{% endblock %}
+</html>
