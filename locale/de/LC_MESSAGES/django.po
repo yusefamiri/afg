@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-27 16:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/templates/blog/post_detail.html:9
+msgid "writen by"
+msgstr ""
+
+#: blog/templates/blog/post_list.html:7
+msgid "All News"
+msgstr ""
+
+#: blog/templates/blog/post_list.html:16 templates/homepage.html:54
+msgid "Continue reading"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:25
+#: exchange/templates/exchange/currency_detail.html:44
+msgid "Actual rate"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:31
+msgid "High"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:38
+msgid "low"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:54
+msgid "All rate updates"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:65
+#: exchange/templates/exchange/overview.html:17 templates/homepage.html:16
+msgid "Sell"
+msgstr "Verkaufen"
+
+#: exchange/templates/exchange/currency_detail.html:66
+#: exchange/templates/exchange/overview.html:18 templates/homepage.html:17
+msgid "Buy"
+msgstr "Kaufen"
+
+#: exchange/templates/exchange/currency_detail.html:67
+#: exchange/templates/exchange/overview.html:19 templates/homepage.html:18
+msgid "Date"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:78
+#: exchange/templates/exchange/overview.html:34 templates/homepage.html:31
+msgid "Today"
+msgstr ""
+
+#: exchange/templates/exchange/overview.html:9 templates/homepage.html:9
+msgid "Exchange Rates"
+msgstr ""
+
+#: exchange/templates/exchange/overview.html:15 templates/homepage.html:14
+msgid "Currency"
+msgstr ""
+
+#: fxrate/settings.py:112 fxrate/settings_git.py:113
+msgid "English"
+msgstr ""
+
+#: fxrate/settings.py:113 fxrate/settings_git.py:114
+msgid "German"
+msgstr ""
+
+#: fxrate/settings.py:114 fxrate/settings_git.py:115
+msgid "Persian"
+msgstr ""
+
+#: templates/base.html:24 templates/base.html:45
+msgid "Financial Market"
+msgstr ""
+
+#: templates/base.html:47
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:48 templates/homepage.html:45
+msgid "News"
+msgstr ""
+
+#: templates/base.html:49
+msgid "Exchange Table"
+msgstr ""
+
+#: templates/base.html:85
+msgid "About"
+msgstr ""
+
+#: templates/base.html:88
+msgid "Contact"
+msgstr ""
+
+#: templates/base.html:91
+msgid "Terms"
+msgstr ""
+
+#: templates/base.html:94
+msgid "Cookies"
+msgstr ""
+
+#: templates/base.html:97
+msgid "Back to top"
+msgstr ""

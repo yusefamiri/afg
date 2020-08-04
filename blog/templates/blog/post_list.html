@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block content %}
 
     <!-- Blog Cards -->
 
-    <h2>Neuigkeiten</h2><hr>
+    <h2>{% trans 'All News' %}</h2><hr>
     <div class="row mb-5">
     {% for post in post_list %}
     <div class="col-md-6">
@@ -12,8 +13,8 @@
                 <div class="float-right">
                   <strong class="d-inline-block mb-2 text-primary">{{ post.title }}</strong>
                   <p class="card-text mb-auto">{{ post.short_description }}</p>
-                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link">Continue reading</a>
-                  <div class="mb-1 text-muted">{{ post.edit_date }}</div>
+                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link">{% trans 'Continue reading' %}</a>
+                  <div class="mb-1 text-muted">{{ post.edit_date|date:"H:i, d-m-Y" }}</div>
                  </div>
               </div>
               <div class="col-auto d-none d-lg-block">

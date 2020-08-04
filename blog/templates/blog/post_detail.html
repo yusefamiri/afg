@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block content %}
 
     <div class="row">
         <div class="col card mb-3">
             <div class="card-body">
                 <h1 class="my-3">{% block title %} {{ object.title }} {% endblock title %}</h1>
-                <p class=" text-muted">writen by {{ post.author }} | {{ post.creation_date }}</p>
+                <p class=" text-muted"> {% trans 'writen by' %} {{ post.author }} | {{ post.creation_date|date:"H:i, d-m-Y" }}</p>
                 <p class="card-text ">{{ object.content | safe }}</p>
                 {% lorem 3 p random %}
             </div>
         </div>
     </div>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 {% endblock content %}

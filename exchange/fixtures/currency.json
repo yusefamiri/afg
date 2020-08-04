@@ -1,46 +1,78 @@
 [
-{
-     "model": "exchange.currency",
-     "pk": 1,
-     "fields": {
-          "country": "Europa",
-          "iso": "EUR",
-          "designation": "Euro",
-          "symbol": "\u20ac",
-          "flag": "\uD83C\uDDEA\uD83C\uDDFA"
-     }
-},
-{
+  {
+    "model": "exchange.currency",
+    "pk": 1,
+    "fields": {
+      "country": "United States of America",
+      "country_fa": "ایالات متحده آمریکا",
+      "country_en": "United States of America",
+      "iso": "USD",
+      "designation": "US-Dollar",
+      "designation_fa": "دالر امریکایی",
+      "designation_en": "USD",
+      "symbol": "$",
+      "flag": "\uD83C\uDDFA\uD83C\uDDF8"
+    }
+  },
+ {
      "model": "exchange.currency",
      "pk": 2,
      "fields": {
-          "country": "United States of America",
-          "iso": "USD",
-          "designation": "US-Dollar",
-          "symbol": "$",
-          "flag": "\uD83C\uDDFA\uD83C\uDDF8"
+       "country": "EU",
+       "country_fa": "اتحادیه اروپا",
+       "country_en": "European Union",
+       "iso": "EUR",
+       "designation": "Europ",
+       "designation_fa": "یورو",
+       "designation_en": "Euro",
+       "symbol": "\u20ac",
+       "flag": "\uD83C\uDDEA\uD83C\uDDFA"
      }
-},
-{
-     "model": "exchange.currency",
-     "pk": 3,
-     "fields": {
-          "country": "Japan",
-          "iso": "JPY",
-          "designation": "Yen",
-          "symbol": "\u00a5",
-          "flag": "\uD83C\uDDEF\uD83C\uDDF5"
-     }
-},
-{
-     "model": "exchange.currency",
+ },
+  {
+    "model": "exchange.currency",
+    "pk": 3,
+    "fields": {
+      "country": "UK",
+      "country_fa": "بریتانیا",
+      "country_en": "United Kingdom",
+      "iso": "UK",
+      "designation": "Pfund Sterling",
+      "designation_fa": "پوند ميكس",
+      "designation_en": "POUND",
+      "symbol": "\u00a3",
+      "flag": "\uD83C\uDDEC\uD83C\uDDE7"
+    }
+
+  },
+  {
+    "model": "exchange.currency",
      "pk": 4,
      "fields": {
-          "country": "United Kingdom",
-          "iso": "UK",
-          "designation": "Pfund Sterling",
-          "symbol": "\u00a3",
-          "flag": "\uD83C\uDDEC\uD83C\uDDE7"
+       "country": "Australia",
+       "country_fa":"استرالیا",
+       "country_en":"Australia",
+       "iso": "AUS",
+       "designation": "",
+       "designation_fa": "آستراليا",
+       "designation_en": "Australian dollar",
+       "symbol": "$",
+       "flag": "\ud83c\udde6\ud83c\uddfa"
      }
-}
+  },
+  {
+     "model": "exchange.currency",
+     "pk": 5,
+     "fields": {
+          "country": "Australia",
+          "country_fa":"سوئیس",
+          "country_en":"Switzerland",
+          "iso": "CH",
+          "designation": "",
+          "designation_fa": "فرانک سویس",
+          "designation_en": "Australian dollar",
+          "symbol": "",
+          "flag": "\ud83c\udde8\ud83c\udded"
+     }
+  }
 ]

@@ -1,48 +1,48 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block stylesheets %}<link href="{% static "css/homepage.css" %}" rel="stylesheet">{% endblock %}
 {% block content %}
 
     <!-- Tabels -->
-
-    <div class="mb-5">
-    <h2>Wechselkurse</h2><hr>
+<div class="mb-5">
+    <h2>{% trans 'Exchange Rates' %}</h2>
     <table class="table table-hover table-striped table-bordered w-100">
         <thead>
-        <tr>
-            <th>🏳️</th>
-            <th class="d-none d-sm-table-cell">Currency &#x00A4</th>
-            <th class="d-table-cell d-sm-none">ISO</th>
-            <th>Buy</th>
-            <th>Sell</th>
-            <th class="d-none d-sm-table-cell">Date</th>
-        </tr>
+            <tr>
+                <th>🏳️</th>
+                <th class="d-none d-sm-table-cell">{% trans 'Currency' %}&#x00A4</th>
+                <th class="d-table-cell d-sm-none">ISO</th>
+                <th>{% trans 'Sell' %}</th>
+                <th>{% trans 'Buy' %}</th>
+                <th class="d-none d-sm-table-cell">{% trans 'Date' %}</th>
+            </tr>
         </thead>
         <tbody>
-        {% for exchangerate in exchangerate_list  %}
-        <tr onclick="window.location='{% url 'exchange:currency_detail' exchangerate.currency.iso %}'">
-            <td style="width: 1em">{{ exchangerate.currency.flag }}</td>
-            <td class="d-none d-sm-table-cell">{{ exchangerate.currency.designation }} {{ exchangerate.currency.symbol }}</td>
-            <td class="d-table-cell d-sm-none">{{ exchangerate.currency.iso }} {{ exchangerate.currency.symbol }}</td>
-            <td>{{ exchangerate.buy }}</td>
-            <td>{{ exchangerate.sell }}</td>
-            <td class="d-none d-sm-table-cell">
-                {% if exchangerate.is_today %}
-                    Today, {{ exchangerate.change_date_time|date:"P"}}
-                {% else %}
-                    {{ exchangerate.change_date_time }}
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
+            {% for exchangerate in exchangerate_list  %}
+            <tr onclick="window.location='{% url 'exchange:currency_detail' exchangerate.currency.iso %}'">
+                <td style="width: 1em">{{ exchangerate.currency.flag }}</td>
+                <td class="d-none d-sm-table-cell">{{ exchangerate.currency.designation }} {{ exchangerate.currency.symbol }}</td>
+                <td class="d-table-cell d-sm-none">{{ exchangerate.currency.iso }} {{ exchangerate.currency.symbol }}</td>
+                <td>{{ exchangerate.sell }}</td>
+                <td>{{ exchangerate.buy }}</td>
+                <td class="d-none d-sm-table-cell">
+                    {% if exchangerate.is_today %}
+                        {% trans 'Today' %}, {{ exchangerate.change_date_time|date:"H:i:s"}}
+                    {% else %}
+                        {{ exchangerate.change_date_time|date:"H:i, d-m-Y" }}
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
         </tbody>
-    </table>
+        </table>
     </div>
 
 
     <!-- Blog Cards -->
 
-    <h2>Neuigkeiten</h2><hr>
+    <h2>{% trans 'News' %}</h2><hr>
     <div class="row mb-5">
     {% for post in post_list %}
     <div class="col-md-6">
@@ -51,8 +51,8 @@
                 <div class="float-right">
                   <strong class="d-inline-block mb-2 text-primary">{{ post.title }}</strong>
                   <p class="card-text mb-auto">{{ post.short_description }}</p>
-                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link">Continue reading</a>
-                  <div class="mb-1 text-muted">{{ post.edit_date }}</div>
+                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link"> {% trans 'Continue reading' %} </a>
+                  <div class="mb-1 text-muted">{{ post.edit_date|date:"H:i, d-m-Y" }}</div>
                  </div>
               </div>
               <div class="col-auto d-none d-lg-block">

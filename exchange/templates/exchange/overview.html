@@ -1,37 +1,37 @@
 {% extends 'base.html' %}
-
+{% load static %}
+{% load i18n %}
 {% block content %}
 
 <div class="mb-5">
 
 
-    <h2>All Currencies</h2><hr>
-
-
+    <h2>{% trans 'Exchange Rates' %}</h2>
     <table class="table table-hover table-striped table-bordered w-100">
         <thead>
         <tr>
             <th>🏳️</th>
 {#            <th class="d-none d-sm-table-cell">&#x00A4</th>#}
-            <th class="d-none d-sm-table-cell">Currency &#x00A4</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Currency' %}&#x00A4</th>
             <th class="d-table-cell d-sm-none">ISO</th>
-            <th>Buy</th>
-            <th>Sell</th>
-            <th class="d-none d-sm-table-cell">Date</th>
+            <th>{% trans 'Sell' %}</th>
+            <th>{% trans 'Buy' %}</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Date' %}</th>
+
         </tr>
         </thead>
         <tbody>
         {% for exchangerate in exchangerate_list  %}
         <tr onclick="window.location='{% url 'exchange:currency_detail' exchangerate.currency.iso %}'">
             <td style="width: 1em">{{ exchangerate.currency.flag }}</td>
-{#            <td class="d-none d-sm-table-cell" >{{ exchangerate.currency.symbol }}</td>#}
+{#            <td class="D-NONE d-sm-table-cell" >{{ exchangerate.currency.symbol }}</td>#}
             <td class="d-none d-sm-table-cell">{{ exchangerate.currency.designation }} {{ exchangerate.currency.symbol }}</td>
             <td class="d-table-cell d-sm-none">{{ exchangerate.currency.iso }} {{ exchangerate.currency.symbol }}</td>
-            <td>{{ exchangerate.buy }}</td>
             <td>{{ exchangerate.sell }}</td>
+            <td>{{ exchangerate.buy }}</td>
             <td class="d-none d-sm-table-cell">
                 {% if exchangerate.is_today %}
-                    Today, {{ exchangerate.change_date_time|date:"P"}}
+                    {% trans 'Today' %}, {{ exchangerate.change_date_time|date:"H:i:s"}}
                 {% else %}
                     {{ exchangerate.change_date_time }}
                 {% endif %}
