@@ -21,7 +21,7 @@
 1. enter venv and load packages:
 ```
 pip install Django
-pip install django-admin
+pip install django-admin   #PermissionError: --->  python -m pip install -U pip --user //In Windows 
 pip install django-modeltranslation
 ```
 1. create settings file named: settings.py
